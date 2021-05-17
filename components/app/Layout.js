@@ -1,8 +1,8 @@
-import { CssBaseline } from "@material-ui/core";
-import { ThemeProvider } from "@material-ui/styles";
-import React from "react";
-import theme from "../../styles/theme";
-import Header from "../header/Header";
+import { CssBaseline } from '@material-ui/core';
+import { ThemeProvider } from '@material-ui/styles';
+import React from 'react';
+import theme from '../../styles/theme';
+import Header from '../header/Header';
 
 const Layout = ({ children, activeLinkIs, setActiveLinkIs }) => {
   return (
@@ -10,7 +10,7 @@ const Layout = ({ children, activeLinkIs, setActiveLinkIs }) => {
       <ThemeProvider theme = {theme}>
         <CssBaseline />
         
-        {/* <Header activeLinkIs = {activeLinkIs} setActiveLinkIs = {setActiveLinkIs} /> */}
+        <Header activeLinkIs = {activeLinkIs} setActiveLinkIs = {setActiveLinkIs} />
 
         <div id="page-content">
           {React.cloneElement(children, { setActiveLinkIs: setActiveLinkIs })}
