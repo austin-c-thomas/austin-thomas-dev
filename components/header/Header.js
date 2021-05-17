@@ -2,11 +2,12 @@ import { useEffect, useState } from 'react';
 import { changeActiveLink } from '../../utils';
 
 import LogoButton from './LogoButton';
+import MenuButton from './MenuButton';
 import NavList from './NavList';
 
 const Header = ({ activeLinkIs, setActiveLinkIs }) => {
 
-  const [ isBurgerMenuOpen, setIsBurgerMenuOpen ] = useState(false);
+  const [ isMenuOpen, setIsMenuOpen ] = useState(false);
   // const [ clientWidth, setClientWidth ] = useState(0);
 
   useEffect(() => {
@@ -15,13 +16,13 @@ const Header = ({ activeLinkIs, setActiveLinkIs }) => {
     // setClientWidth(window.innerWidth);
   });
 
-  const toggleBurgerMenu = () => {
-    setIsBurgerMenuOpen(!isBurgerMenuOpen);
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
   };
 
   const handleLinkClick = () => {
-    if (isBurgerMenuOpen) {
-      toggleBurgerMenu();
+    if (isMenuOpen) {
+      toggleMenu();
     };
   };
 
@@ -34,6 +35,10 @@ const Header = ({ activeLinkIs, setActiveLinkIs }) => {
         activeLinkIs = {activeLinkIs}
         isBurgerMenuOpen = {isBurgerMenuOpen}
         handleLinkClick = {handleLinkClick}/> */}
+
+      <MenuButton
+        toggleMenu = {toggleMenu}
+        isMenuOpen = {isMenuOpen} />
      
       <style jsx>
         {`
