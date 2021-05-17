@@ -31,10 +31,10 @@ const Header = ({ activeLinkIs, setActiveLinkIs }) => {
       <LogoButton 
         setActiveLinkIs = {setActiveLinkIs}/>
 
-      {/* <NavList
+      <NavList
         activeLinkIs = {activeLinkIs}
-        isBurgerMenuOpen = {isBurgerMenuOpen}
-        handleLinkClick = {handleLinkClick}/> */}
+        isMenuOpen = {isMenuOpen}
+        handleLinkClick = {handleLinkClick}/>
 
       <MenuButton
         toggleMenu = {toggleMenu}
