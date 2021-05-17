@@ -2,19 +2,52 @@ import Link from 'next/link';
 
 const LogoButton = () => {
   return (
-    <>
-    <Link href='/'>
-      <img src='/assets/austin-logo.png' alt='Logo'/>
+    <div className='logo-button'>
+
+      <Link href='/'>
+        <>
+          <h1>AUSTIN THOMAS</h1>
+          <div className='sub-head'>
+            <span>W</span>
+            <span>E</span>
+            <span>B</span>
+            <span> </span>
+            <span>D</span>
+            <span>E</span>
+            <span>V</span>
+            <span>E</span>
+            <span>L</span>
+            <span>O</span>
+            <span>P</span>
+            <span>M</span>
+            <span>E</span>
+            <span>N</span>
+            <span>T</span>
+          </div>
+        </>
+      </Link>
 
       <style jsx>
         {`
-          img {
-            height: 60px;
+          .logo-button {
+            color: white;
+          }
+
+          h1 {
+            font-size: 1.4rem;
+          }
+
+          .sub-head {
+            display: flex;
+            justify-content: space-between;
+            font-weight: 200;
+            font-size: 0.6rem;
           }
         `}
       </style>
-    </Link>
-    </>
+    </div>
+
+
   );
 };
 
