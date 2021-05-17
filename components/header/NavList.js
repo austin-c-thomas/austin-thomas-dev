@@ -40,7 +40,6 @@ const NavList = ({
 
           .nav-hidden {
             left: -1px;
-            z-index: -1;
             width: 0vw;
             animation: navRevert 0.4s;
           }

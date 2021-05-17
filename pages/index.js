@@ -1,7 +1,10 @@
+import IntroBlock from "../components/home/IntroBlock"
+import IntroGraphic from "../components/home/IntroGraphic";
+
 const Home = () => {
   return (
     <main id="home">
-      Home
+      <IntroBlock />
     </main>
   );
 };
