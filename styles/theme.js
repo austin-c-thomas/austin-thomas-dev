@@ -17,6 +17,13 @@ const theme = createMuiTheme({
       default: '#fff',
     },
   },
+  overrides: {
+    MuiSvgIcon: {
+      root: {
+        fontSize: '6rem',
+      },
+    },
+  },
 });
 
 export default theme;

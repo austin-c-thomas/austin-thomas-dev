@@ -16,3 +16,7 @@
 h1 {
   font-weight: 400;
 }
+
+p, li {
+  font-size: 1.4rem;
+}
