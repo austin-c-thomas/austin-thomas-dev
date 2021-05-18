@@ -8,8 +8,9 @@ const IntroBlock = () => {
         <IntroGraphic />
 
         <div className="intro-content">
-          <h1>Austin Thomas</h1>
-          <h2>Full stack web developer for hire</h2>
+          <h1>AUSTIN THOMAS</h1>
+          <h2>FULL STACK WEB DEVELOPER FOR HIRE</h2>
+          <p></p>
         </div>
       </section>
 
@@ -30,15 +31,18 @@ const IntroBlock = () => {
             justify-content: center;
             align-items: center;
 
-            -webkit-animation: fadeIn 1s;
-            -moz-animation: fadeIn 1s;
-            -o-animation: fadeIn 1s;
-            animation: fadeIn 1s;
+            -webkit-animation: fadeIn 0.5s;
+            -moz-animation: fadeIn 0.5s;
+            -o-animation: fadeIn 0.5s;
+            animation: fadeIn 0.5s;
           }
-
 
           h1 {
             font-size: 3rem;
+          }
+
+          h2 {
+            font-weight: 200;
           }
 
           @keyframes fadeIn {
@@ -49,7 +53,7 @@ const IntroBlock = () => {
 
           @media screen and (max-width: 1080px) {
             .intro-block {
-              flex-direction: column;
+              grid-template-columns: 1fr;
             }
           }
         `}
