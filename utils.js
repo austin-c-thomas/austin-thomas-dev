@@ -29,3 +29,5 @@ export const generateStackList = (label) => {
     return ['Adobe Illustrator', 'Adobe Photoshop']
   };
 };
+
+

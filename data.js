@@ -1,0 +1,47 @@
+export const projects = [
+  {
+    title: 'Thomas & Company, CPA',
+    type: 'Website',
+    job: 'Freelance',
+    role: 'Frontend',
+    description: 'The official client-facing website of Thomas & Company, a niche CPA firm in San Jose, CA.',
+    imageURL: '/assets/office-background-1.jpg',
+    frontend: 'url',
+    backend: '',
+    live: true,
+    private: true,
+    deploy: 'https://thomasandcompanycpa.com/',
+    technologies: ['NextJS', 'CSS3', 'Material UI', 'Vercel'],
+  },
+
+  {
+    title: 'The Sketch Shoppe',
+    type: 'Website',
+    job: 'Bootcamp Project',
+    role: 'Full Stack',
+    description: 'A functional e-commerce site for selling reasonably sketchy things.',
+    imageURL: '/assets/sketch-shoppe.png',
+    frontend: 'https://github.com/Reasonably-Sketchy/GraceShopperFrontend',
+    backend: 'https://github.com/Reasonably-Sketchy/GraceShopperBackend',
+    live: true,
+    private: false,
+    deploy: 'https://sketch-shoppe.netlify.app/',
+    technologies: ['ReactJS', 'CSS3', 'Material UI', 'Netlify', 'Git'],
+  },
+
+  {
+    title: `Stranger's Things`,
+    type: 'App',
+    job: 'Bootcamp Project',
+    role: 'Frontend',
+    description: 'A digital marketplace app built around a 3rd party API.',
+    imageURL: '/assets/strangers-things.png',
+    frontend: 'https://github.com/austin-c-thomas/strangers-things',
+    backend: '',
+    live: true,
+    private: false,
+    deploy: 'https://austins-strangers-things.netlify.app/',
+    technologies: ['ReactJS', 'CSS3', 'Material UI', 'Netlify', 'Git'],
+  },
+
+]

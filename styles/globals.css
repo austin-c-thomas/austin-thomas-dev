@@ -18,11 +18,17 @@ h1 {
 }
 
 p, li {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
+  font-weight: 200;
+}
+
+a {
+  text-decoration: none;
 }
 
 @media screen and (max-width: 768px) {
   .MuiSvgIcon-root {
     font-size: 3rem !important;
   };
+
 };

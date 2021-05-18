@@ -1,7 +1,9 @@
-import BioBlock from "../components/home/BioBlock";
-import IntroBlock from "../components/home/IntroBlock"
-import IntroGraphic from "../components/home/IntroGraphic";
-import TechBlock from "../components/home/TechBlock";
+import {
+  BioBlock,
+  IntroBlock,
+  ProjectsBlock,
+  TechBlock,
+} from '../components';
 
 const Home = () => {
   return (
@@ -9,6 +11,7 @@ const Home = () => {
       <IntroBlock />
       <BioBlock />
       <TechBlock />
+      <ProjectsBlock />
     </main>
   );
 };
