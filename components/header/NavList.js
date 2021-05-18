@@ -35,7 +35,7 @@ const NavList = ({
             padding-top: 60px;
             overflow-x: hidden;
 
-            height: 500px;
+            height: 100vh;
           }
 
           .nav-hidden {
@@ -47,7 +47,7 @@ const NavList = ({
           .nav-active {
             left: 0;
             z-index: 100;
-            width: 80vw;
+            width: 50vw;
             animation: navSlide 0.4s;
           }
 
@@ -86,11 +86,11 @@ const NavList = ({
 
           @keyframes navSlide {
             0% { width: 0px; }
-            100 { width: 80vw; }
+            100 { width: 50vw; }
           }
 
           @keyframes navRevert {
-            0% { width: 80vw; }
+            0% { width: 50vw; }
             100 { width: 0px; }
           }
 

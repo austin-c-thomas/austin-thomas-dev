@@ -20,7 +20,6 @@ const IntroBlock = () => {
             background: #000;
             color: white;
             padding: 20px;
-            width: 100vw;
             display: grid;
             grid-template-columns: 1fr 1fr;
           }
