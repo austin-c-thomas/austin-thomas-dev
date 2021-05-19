@@ -18,7 +18,7 @@ const IntroBlock = () => {
         </div>
 
         <div className="carrot-wrapper">
-          <Link className="carrot-link" to="projects" spy={true} smooth={true}>
+          <Link className="carrot-link" to="bio-block" spy={true} smooth={true}>
             <Carrot color = "rgb(160, 160, 160)" />
           </Link>
         </div>
@@ -59,7 +59,6 @@ const IntroBlock = () => {
             height: 50px;
             width: 100%;
             padding: 10px;
-
           }
 
           h1 {

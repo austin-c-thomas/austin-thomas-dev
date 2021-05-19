@@ -18,9 +18,31 @@ const theme = createMuiTheme({
     },
   },
   overrides: {
+    MuiButton: {
+      root: {
+        height: '50px',
+      }
+    },
     MuiSvgIcon: {
       root: {
-        fontSize: '6rem',
+        fontSize: '5rem',
+      },
+    },
+    MuiInputBase: {
+      root: {
+        color: '#fff',
+        fontSize: '1.4rem',
+        
+      }
+    },
+    MuiOutlinedInput: {
+      root: {
+        backgroundColor: 'rgba(255, 255, 255, 0.09)',
+      },
+    },
+    MuiFormLabel: {
+      root: {
+        color: 'rgba(180, 180, 180)',
       },
     },
   },
