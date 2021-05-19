@@ -1,11 +1,12 @@
 import { Button } from "@material-ui/core"
 import { KeyboardArrowDown } from "@material-ui/icons"
 import IntroGraphic from "./IntroGraphic"
+import { Link } from 'react-scroll';
 
 const IntroBlock = () => {
   return (
     <>
-      <section className="intro-block">
+      <section id="intro-block">
 
         <IntroGraphic />
 
@@ -15,14 +16,16 @@ const IntroBlock = () => {
         </div>
 
         <div className="carrot">
-          <Button color="primary" fullWidth><KeyboardArrowDown /></Button>
+          <Link className="carrot-link" to="projects" spy={true} smooth={true} fullWidth>
+            <Button color="primary" fullWidth><KeyboardArrowDown /></Button>
+          </Link>
         </div>
       </section>
 
 
       <style jsx>
         {`      
-          .intro-block {
+          #intro-block {
             background: #000;
             color: white;
             padding: 80px 20px 0 20px;
@@ -65,7 +68,7 @@ const IntroBlock = () => {
           }
 
           @media screen and (max-width: 1080px) {
-            .intro-block {
+            #intro-block {
               grid-template-columns: 1fr;
               display: flex;
               flex-direction: column;
