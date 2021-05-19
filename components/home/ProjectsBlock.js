@@ -7,7 +7,8 @@ const ProjectsBlock = () => {
     <>
       <section id="projects">
         <div className="projects-intro">
-          <h1>This is a description of my projects.</h1>
+          <h1>PROJECTS</h1>
+          <p></p>
         </div>
 
         {projects.map((project, index) => {
@@ -32,9 +33,16 @@ const ProjectsBlock = () => {
           }
 
           .projects-intro {
-            height: 500px;
-            border: 1px solid white;
-            padding: 80px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+          }
+
+          .projects-intro h1 {
+            font-size: 2rem;
+            font-weight: 200;
+            border-bottom: 1px solid #fff;
           }
 
           @media screen and (max-width: 1080px) {

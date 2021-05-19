@@ -9,9 +9,10 @@ const Home = () => {
   return (
     <main id="home">
       <IntroBlock />
-      <BioBlock />
-      <TechBlock />
+      {/* <BioBlock /> */}
       <ProjectsBlock />
+      <TechBlock />
+      
     </main>
   );
 };
