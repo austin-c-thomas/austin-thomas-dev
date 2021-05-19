@@ -1,5 +1,6 @@
 import {
   BioBlock,
+  ContactBlock,
   IntroBlock,
   ProjectsBlock,
   TechBlock,
@@ -12,7 +13,7 @@ const Home = () => {
       {/* <BioBlock /> */}
       <ProjectsBlock />
       <TechBlock />
-      
+      <ContactBlock />
     </main>
   );
 };

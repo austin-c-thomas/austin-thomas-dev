@@ -27,7 +27,7 @@ const NavList = ({
             to="projects" 
             spy={true} 
             smooth={true} 
-            onClick={() => handleLinkClick("Home")}>
+            onClick={() => handleLinkClick("Projects")}>
             <span className="link">Projects</span>
           </Link>
         </li>
@@ -37,8 +37,18 @@ const NavList = ({
             to="tech-block" 
             spy={true} 
             smooth={true} 
-            onClick={() => handleLinkClick("Home")}>
+            onClick={() => handleLinkClick("Technologies")}>
             <span className="link">Technologies</span>
+          </Link>
+        </li>
+        
+        <li className={isMenuOpen ? "nav-link" : "hidden"}>
+          <Link 
+            to="contact-block" 
+            spy={true} 
+            smooth={true} 
+            onClick={() => handleLinkClick("Contact")}>
+            <span className="link">Contact</span>
           </Link>
         </li>
 
