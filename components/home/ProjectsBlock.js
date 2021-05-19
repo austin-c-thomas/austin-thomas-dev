@@ -26,6 +26,7 @@ const ProjectsBlock = () => {
       <style jsx>
         {`
           #projects {
+            padding-top: 60px;
             background-color: #000;
             color: #fff;
             display: grid;

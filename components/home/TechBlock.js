@@ -21,7 +21,7 @@ const TechBlock = () => {
           #tech-block {
             background-color: #000;
             color: #fff;
-            padding: 10vw 10vw 5vw 10vw;
+            padding: 120px 10vw 5vw 10vw;
           }
 
           .block-header {
@@ -45,7 +45,7 @@ const TechBlock = () => {
 
           @media screen and (max-width: 768px) {
             #tech-block {
-              padding: 15vw 10vw 5vw 10vw;
+              padding: 100px 10vw 5vw 10vw;
             }  
           }
         `}

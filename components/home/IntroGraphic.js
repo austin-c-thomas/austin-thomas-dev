@@ -162,6 +162,75 @@ const IntroGraphic = () => {
             100% { opacity: 100%; }
           }
 
+          @media screen and (max-width: 1080px) {
+            .intro-graphic {
+              grid-template-columns: 32vh 32vh;
+              grid-template-rows: 32vh 32vh;
+            }
+  
+            .a {
+              border-top-right-radius: 16vh;
+            }
+  
+            .a1 {
+              background-color: #000;
+              width: 16vh;
+              height: 8vh;
+              border-top-right-radius: 8vh;
+            }
+  
+            .a2 {
+              width: 16vh;
+              height: 8vh;
+            }
+  
+            .a2a {
+              height: 8vh;
+            }
+  
+            .a3 {
+              width: 16vh;
+              height: 8vh;
+            }
+  
+            .t1, .t2 {
+              height: 24vh;
+              width: 10.5vh;
+            }
+  
+            .w {
+              border-bottom-right-radius: 16vh;
+              grid-template-columns: 8vh 1fr 1fr 1fr 8vh;
+            }
+  
+            .w1 {
+              height: 24vh;
+              border-bottom-right-radius: 8vh;
+            }
+    
+            .w2a {
+              height: 8vh;
+              border-bottom-right-radius: 8vh;
+            }
+  
+            .w3 {
+              height: 24vh;
+              border-bottom-right-radius: 8vh;
+            }
+  
+            .d {
+              border-top-right-radius: 16vh;
+              border-bottom-right-radius: 16vh;
+            }
+  
+            .d1 {
+              width: 16vh;
+              height: 16vh;
+              border-top-right-radius: 8vh;
+              border-bottom-right-radius: 8vh;
+            }  
+          }
+
           @media screen and (max-width: 768px) {
             .intro-graphic {
               grid-template-columns: 40vw 40vw;

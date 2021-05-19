@@ -8,7 +8,7 @@ const NavList = ({
   return (
     <nav className={isMenuOpen ? "nav nav-active" : "nav nav-hidden"}>
       
-      <img classname="logo" src="/assets/austin-logo.png" alt="Austin Thomas Web Development" />
+      <img className="logo" src="/assets/austin-logo.png" alt="Austin Thomas Web Development" />
       
       <ul className={isMenuOpen ? "nav-list-active" : "nav-list-hidden"}>
 
@@ -71,7 +71,13 @@ const NavList = ({
           }
 
           .logo {
-            height: 20px;
+            position: relative;
+            width: 150px;
+            margin-left: 30px;
+            -webkit-animation: linkSlide 0.5s ease 0s;
+            -moz-animation: linkSlide 0.5s ease 0s;
+            -o-animation: linkSlide 0.5s ease 0s;
+            animation: linkSlide 0.5s ease 0s; 
           }
 
           .nav-list-active {
@@ -123,6 +129,11 @@ const NavList = ({
             100% { left: 0; }
           }
 
+          @media screen and (max-width: 768px) {
+            .nav-active {
+              width: 80vw;
+            }
+          }
         `}
       </style>
     </nav>
