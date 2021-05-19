@@ -3,10 +3,7 @@ import Link from 'next/link';
 import { Button } from '@material-ui/core';
 
 const ProjectCard = ({ project }) => {
-  console.log('PROJECT: ', project)
-
   const [ hovered, setHovered ] = useState(false);
-
   return (
     <>
       <div className="project-card"
@@ -76,7 +73,7 @@ const ProjectCard = ({ project }) => {
           .project-card {
             display: flex;
             overflow: hidden;
-            min-height: 400px;
+            min-height: 500px;
           }
 
           .card-image {
@@ -128,13 +125,13 @@ const ProjectCard = ({ project }) => {
 
           .actions-wrapper {
             margin-top: 30px;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
+            display: flex;
           }
           
           .button-group {
             display: flex;
             flex-direction: column;
+            margin-right: 20px;
           }
 
           .button-group a, .button-group span {
@@ -153,6 +150,16 @@ const ProjectCard = ({ project }) => {
           @media screen and (max-width: 1080px) {
             .card-image {
               height: inherit;
+            }
+          }
+
+          @media screen and (max-width: 600px) {
+            .overlay-content p {
+              font-size: 1rem;
+            }
+
+            .button-group {
+              margin-right: 10px;
             }
           }
         `}

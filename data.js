@@ -26,7 +26,37 @@ export const projects = [
     live: true,
     private: false,
     deploy: 'https://sketch-shoppe.netlify.app/',
-    technologies: ['ReactJS', 'CSS3', 'Material UI', 'Netlify', 'Git'],
+    technologies: ['ReactJS', 'Node/ExpressJS', 'PostgreSQL', 'CSS3', 'Material UI', 'Netlify', 'Heroku', 'Git'],
+  },
+
+  {
+    title: 'Austin Thomas Dev',
+    type: 'Website',
+    job: 'Personal',
+    role: 'Full Stack',
+    description: 'My personal portfolio site (which you are currently on!)',
+    imageURL: '/assets/austin-thomas-web-dev.png',
+    frontend: 'https://github.com/austin-c-thomas/austin-thomas-dev',
+    backend: '',
+    live: true,
+    private: false,
+    deploy: '/',
+    technologies: ['NextJS', 'CSS3', 'Material UI', 'Vercel'],
+  },
+
+  {
+    title: `Fitness Trackr`,
+    type: 'App',
+    job: 'Bootcamp Project',
+    role: 'Full Stack',
+    description: 'An app for creating and sharing fitness routines.',
+    imageURL: '/assets/fitness-trackr.png',
+    frontend: 'https://github.com/austin-c-thomas/UNIV_FitnessTrackr_React_Austin_Richard',
+    backend: 'https://github.com/austin-c-thomas/UNIV_FitnessTrackr_Starter',
+    live: true,
+    private: true,
+    deploy: 'https://fitness-trackr-austin-richard.netlify.app/',
+    technologies: ['ReactJS', 'Node/ExpressJS', 'PostgreSQL', 'CSS3', 'Netlify', 'Heroku', 'Git'],
   },
 
   {
