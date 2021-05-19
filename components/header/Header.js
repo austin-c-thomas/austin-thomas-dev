@@ -31,7 +31,7 @@ const Header = ({ activeLinkIs, setActiveLinkIs }) => {
         setActiveLinkIs = {setActiveLinkIs}/>
 
       <NavList
-        activeLinkIs = {activeLinkIs}
+        setIsMenuOpen = {setIsMenuOpen}
         isMenuOpen = {isMenuOpen}
         handleLinkClick = {handleLinkClick}/>
 

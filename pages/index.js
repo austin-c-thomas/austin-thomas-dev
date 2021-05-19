@@ -10,7 +10,7 @@ const Home = () => {
   return (
     <main id="home">
       <IntroBlock />
-      {/* <BioBlock /> */}
+      <BioBlock />
       <ProjectsBlock />
       <TechBlock />
       <ContactBlock />

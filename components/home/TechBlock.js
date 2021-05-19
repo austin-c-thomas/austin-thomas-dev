@@ -21,7 +21,7 @@ const TechBlock = () => {
           #tech-block {
             background-color: #000;
             color: #fff;
-            padding: 120px 10vw 5vw 10vw;
+            padding: 120px 10vw 0 10vw;
           }
 
           .block-header {

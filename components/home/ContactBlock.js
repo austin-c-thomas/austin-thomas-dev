@@ -49,7 +49,7 @@ const ContactBlock = () => {
           #contact-block {
             background-color: #000;
             color: #fff;
-            padding: 120px 10vw 5vw 10vw;
+            padding: 80px 10vw 5vw 10vw;
           }
 
           .contact-body {

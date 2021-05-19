@@ -2,6 +2,7 @@ import { CssBaseline } from '@material-ui/core';
 import { ThemeProvider } from '@material-ui/styles';
 import React from 'react';
 import theme from '../../styles/theme';
+import Footer from '../footer/Footer';
 import Header from '../header/Header';
 
 const Layout = ({ children, activeLinkIs, setActiveLinkIs }) => {
@@ -16,6 +17,7 @@ const Layout = ({ children, activeLinkIs, setActiveLinkIs }) => {
           {React.cloneElement(children, { setActiveLinkIs: setActiveLinkIs })}
         </div>
 
+        <Footer />
       </ThemeProvider>
     </div>
   );
