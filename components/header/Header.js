@@ -53,6 +53,7 @@ const Header = ({ activeLinkIs, setActiveLinkIs }) => {
             justify-content: space-between;
             background-color: #000;
             transition: all 0.7s ease-in;
+            z-index: 100;
           }
         `}
       </style>

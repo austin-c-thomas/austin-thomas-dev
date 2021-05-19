@@ -1,10 +1,9 @@
-import { Computer, SettingsInputAntenna, Build, Web } from '@material-ui/icons';
 import StackSection from './StackSection';
 
 const TechBlock = () => {
   return (
     <>
-      <section className="tech-block">
+      <section id="tech-block">
         <div className="block-header">
           <h1>TECH STACK</h1>
         </div>
@@ -19,10 +18,10 @@ const TechBlock = () => {
 
       <style jsx>
         {`
-          .tech-block {
+          #tech-block {
             background-color: #000;
             color: #fff;
-            padding: 10vw 10vw 5vw 10vw;
+            padding: 120px 10vw 5vw 10vw;
           }
 
           .block-header {
@@ -45,8 +44,8 @@ const TechBlock = () => {
           }
 
           @media screen and (max-width: 768px) {
-            .tech-block {
-              padding: 15vw 10vw 5vw 10vw;
+            #tech-block {
+              padding: 100px 10vw 5vw 10vw;
             }  
           }
         `}

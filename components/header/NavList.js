@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import { Link } from 'react-scroll';
 
 const NavList = ({ 
   activeLinkIs, 
@@ -7,17 +7,38 @@ const NavList = ({
 
   return (
     <nav className={isMenuOpen ? "nav nav-active" : "nav nav-hidden"}>
+      
+      <img className="logo" src="/assets/austin-logo.png" alt="Austin Thomas Web Development" />
+      
       <ul className={isMenuOpen ? "nav-list-active" : "nav-list-hidden"}>
 
         <li className={isMenuOpen ? "nav-link" : "hidden"}>
-          <Link href="/">
-            <a onClick={() => handleLinkClick("Home")}>Home</a>
+          <Link 
+            to="intro-block" 
+            spy={true} 
+            smooth={true} 
+            onClick={() => handleLinkClick("Home")}>
+            <span className="link">Home</span>
           </Link>
         </li>
 
         <li className={isMenuOpen ? "nav-link" : "hidden"}>
-          <Link href="/about">
-            <a onClick={() => handleLinkClick("About")}>About</a>
+          <Link 
+            to="projects" 
+            spy={true} 
+            smooth={true} 
+            onClick={() => handleLinkClick("Home")}>
+            <span className="link">Projects</span>
+          </Link>
+        </li>
+
+        <li className={isMenuOpen ? "nav-link" : "hidden"}>
+          <Link 
+            to="tech-block" 
+            spy={true} 
+            smooth={true} 
+            onClick={() => handleLinkClick("Home")}>
+            <span className="link">Technologies</span>
           </Link>
         </li>
 
@@ -25,7 +46,6 @@ const NavList = ({
 
       <style jsx>
         {`
-
           .nav {
             position: absolute;
             display: flex;
@@ -34,7 +54,6 @@ const NavList = ({
             background-color: #000;
             padding-top: 60px;
             overflow-x: hidden;
-
             height: 100vh;
           }
 
@@ -51,6 +70,16 @@ const NavList = ({
             animation: navSlide 0.4s;
           }
 
+          .logo {
+            position: relative;
+            width: 150px;
+            margin-left: 30px;
+            -webkit-animation: linkSlide 0.5s ease 0s;
+            -moz-animation: linkSlide 0.5s ease 0s;
+            -o-animation: linkSlide 0.5s ease 0s;
+            animation: linkSlide 0.5s ease 0s; 
+          }
+
           .nav-list-active {
             height: 100%;
             list-style-type: none;
@@ -63,7 +92,7 @@ const NavList = ({
             -o-animation: linkSlide 0.5s ease 0s;
             animation: linkSlide 0.5s ease 0s; 
 
-            height: 60px; 
+            height: 80px; 
             display: flex;
             flex-direction: column;
             justify-content: center; 
@@ -73,14 +102,15 @@ const NavList = ({
             display: none;
           }
 
-          .nav-link a {
+          .link {
             color: white;
             text-decoration: none;
             font-size: 1.4rem;
-            margin-left: 10px;
+            margin-left: 30px;
+            cursor: pointer;
           }
 
-          .nav-link a:hover {
+          .link:hover {
             color: yellow;
           }
 
@@ -99,6 +129,11 @@ const NavList = ({
             100% { left: 0; }
           }
 
+          @media screen and (max-width: 768px) {
+            .nav-active {
+              width: 80vw;
+            }
+          }
         `}
       </style>
     </nav>

@@ -1,34 +1,43 @@
 import { Button } from "@material-ui/core"
 import { KeyboardArrowDown } from "@material-ui/icons"
 import IntroGraphic from "./IntroGraphic"
+import { Link } from 'react-scroll';
+import Carrot from "./Carrot";
 
 const IntroBlock = () => {
   return (
     <>
-      <section className="intro-block">
-
-        <IntroGraphic />
+      <section id="intro-block">
+        <div className="intro-graphic-wrapper">
+          <IntroGraphic />
+        </div>
 
         <div className="intro-content">
           <h1>AUSTIN THOMAS</h1>
           <h2>FULL STACK WEB DEVELOPER FOR HIRE</h2>
         </div>
 
-        <div className="carrot">
-          <Button color="primary" fullWidth><KeyboardArrowDown /></Button>
+        <div className="carrot-wrapper">
+          <Link className="carrot-link" to="projects" spy={true} smooth={true}>
+            <Carrot color = "rgb(160, 160, 160)" />
+          </Link>
         </div>
       </section>
 
 
       <style jsx>
         {`      
-          .intro-block {
+          #intro-block {
             background: #000;
             color: white;
-            padding: 80px 20px 0 20px;
+            padding-top: 80px;
             display: grid;
             grid-template-columns: 1fr 1fr;
             min-height: 100vh;
+          }
+
+          .intro-graphic-wrapper, .intro-content {
+            padding: 20px;
           }
 
           .intro-content {
@@ -43,11 +52,14 @@ const IntroBlock = () => {
             animation: fadeIn 0.5s;
           }
 
-          .carrot {
+          .carrot-wrapper {
             grid-column: 1 / 3;
             display: flex;
-            width: 100%;
+            justify-content: center;
             height: 50px;
+            width: 100%;
+            padding: 10px;
+
           }
 
           h1 {
@@ -65,7 +77,7 @@ const IntroBlock = () => {
           }
 
           @media screen and (max-width: 1080px) {
-            .intro-block {
+            #intro-block {
               grid-template-columns: 1fr;
               display: flex;
               flex-direction: column;
