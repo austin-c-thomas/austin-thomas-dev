@@ -9,13 +9,13 @@ const IntroBlock = () => {
     <>
       <section id="intro-block">
 
-        {/* <div className="intro-graphic-wrapper">
+        <div className="intro-graphic-wrapper">
           <IntroGraphic />
-        </div> */}
-
-        <div className="intro-graphic-wrap">
-          <img className="intro-graphic" src="/assets/ATWD.png"/>
         </div>
+
+        {/* <div className="intro-graphic-wrap">
+          <img className="intro-graphic" src="/assets/ATWD.png"/>
+        </div> */}
 
         <div className="intro-content">
           <h1>AUSTIN THOMAS</h1>
@@ -45,27 +45,30 @@ const IntroBlock = () => {
             padding: 20px;
           }
 
-          .intro-graphic-wrap {
-            background-image: url('/assets/tahoe.jpg');
-            height: 79vh;
-            width: 79vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+              /* 
+              Parallax 
+              .intro-graphic-wrap {
+                background-image: url('/assets/tahoe.jpg');
+                height: 79vh;
+                width: 79vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
 
-            background-attachment: fixed; 
-            background-position: center;
-            background-repeat: no-repeat;
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
-            background-size: cover;
-          }
+                background-attachment: fixed; 
+                background-position: center;
+                background-repeat: no-repeat;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+              }
 
-          .intro-graphic {
-            height: 80vh;
-            width: 80vh;
-          }
+              .intro-graphic {
+                height: 80vh;
+                width: 80vh;
+              }
+              */
 
           .intro-content {
             display: flex;
@@ -112,15 +115,18 @@ const IntroBlock = () => {
               align-items: flex-start;
             }
 
-            .intro-graphic-wrap {
-              height: 63vh;
-              width: 63vh;
-            }
+                /*
+                Parallax
+                .intro-graphic-wrap {
+                  height: 63vh;
+                  width: 63vh;
+                }
 
-            .intro-graphic {
-              height: 64vh;
-              width: 64vh;
-            }
+                .intro-graphic {
+                  height: 64vh;
+                  width: 64vh;
+                }
+                */
           }
 
           @media screen and (max-width: 768px) {
@@ -128,15 +134,18 @@ const IntroBlock = () => {
               align-items: center;
             }
 
-            .intro-graphic-wrap {
-              height: 79vw;
-              width: 79vw;
-            }
+                /* 
+                Parallax
+                .intro-graphic-wrap {
+                  height: 79vw;
+                  width: 79vw;
+                }
 
-            .intro-graphic {
-              height: 80vw;
-              width: 80vw;
-            }
+                .intro-graphic {
+                  height: 80vw;
+                  width: 80vw;
+                }
+                */
         `}
       </style>
     </>
