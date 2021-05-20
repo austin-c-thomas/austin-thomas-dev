@@ -8,8 +8,13 @@ const IntroBlock = () => {
   return (
     <>
       <section id="intro-block">
-        <div className="intro-graphic-wrapper">
+
+        {/* <div className="intro-graphic-wrapper">
           <IntroGraphic />
+        </div> */}
+
+        <div className="intro-graphic-wrap">
+          <img className="intro-graphic" src="/assets/ATWD.png"/>
         </div>
 
         <div className="intro-content">
@@ -38,6 +43,28 @@ const IntroBlock = () => {
 
           .intro-graphic-wrapper, .intro-content {
             padding: 20px;
+          }
+
+          .intro-graphic-wrap {
+            background-image: url('/assets/tahoe.jpg');
+            height: 79vh;
+            width: 79vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            background-attachment: fixed; 
+            background-position: center;
+            background-repeat: no-repeat;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+          }
+
+          .intro-graphic {
+            height: 80vh;
+            width: 80vh;
           }
 
           .intro-content {
@@ -77,7 +104,6 @@ const IntroBlock = () => {
 
           @media screen and (max-width: 1080px) {
             #intro-block {
-              grid-template-columns: 1fr;
               display: flex;
               flex-direction: column;
             }
@@ -85,7 +111,32 @@ const IntroBlock = () => {
             .intro-content {
               align-items: flex-start;
             }
+
+            .intro-graphic-wrap {
+              height: 63vh;
+              width: 63vh;
+            }
+
+            .intro-graphic {
+              height: 64vh;
+              width: 64vh;
+            }
           }
+
+          @media screen and (max-width: 768px) {
+            #intro-block {
+              align-items: center;
+            }
+
+            .intro-graphic-wrap {
+              height: 79vw;
+              width: 79vw;
+            }
+
+            .intro-graphic {
+              height: 80vw;
+              width: 80vw;
+            }
         `}
       </style>
     </>
