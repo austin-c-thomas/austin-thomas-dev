@@ -138,6 +138,10 @@ const BioBlock = () => {
             #tech-block {
               padding: 80px 10vw 5vw 10vw;
             }  
+            
+            .underlined, .underlined.active {
+              top: 0;
+            }
           }
         `}
       </style>
