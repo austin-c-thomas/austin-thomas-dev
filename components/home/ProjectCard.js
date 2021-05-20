@@ -74,10 +74,11 @@ const ProjectCard = ({ project }) => {
             display: flex;
             overflow: hidden;
             min-height: 500px;
+            display: flex;
           }
 
           .card-image {
-            height: 100%;
+            height: inherit;
             width: 100%;
             background: url(${project.imageURL});
             background-size: cover;
@@ -145,12 +146,6 @@ const ProjectCard = ({ project }) => {
           @keyframes fadeIn {
             0% { background-color: rgba(0, 0, 0, 0); }
             100 { background-color: rgba(0, 0, 0, 0.95); }
-          }
-
-          @media screen and (max-width: 1080px) {
-            .card-image {
-              height: inherit;
-            }
           }
 
           @media screen and (max-width: 600px) {
