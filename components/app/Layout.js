@@ -1,20 +1,21 @@
 import { CssBaseline } from '@material-ui/core';
 import { ThemeProvider } from '@material-ui/styles';
-import React from 'react';
+import React, { useState } from 'react';
 import theme from '../../styles/theme';
 import Footer from '../footer/Footer';
 import Header from '../header/Header';
 
-const Layout = ({ children, activeLinkIs, setActiveLinkIs }) => {
+const Layout = ({ children }) => {
+  const [ position, setPosition ] = useState('Home');
   return (
     <div id="app">
       <ThemeProvider theme = {theme}>
         <CssBaseline />
         
-        <Header activeLinkIs = {activeLinkIs} setActiveLinkIs = {setActiveLinkIs} />
+        <Header position = {position} setPosition = {setPosition} />
 
         <div id="page-content">
-          {React.cloneElement(children, { setActiveLinkIs: setActiveLinkIs })}
+          {React.cloneElement(children, { position, setPosition })}
         </div>
 
         <Footer />

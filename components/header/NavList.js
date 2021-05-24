@@ -5,7 +5,8 @@ import { KeyboardArrowLeft } from '@material-ui/icons';
 const NavList = ({ 
   setIsMenuOpen, 
   isMenuOpen, 
-  handleLinkClick }) => {
+  handleLinkClick,
+  position }) => {
   
   return (
     <nav className={isMenuOpen ? "nav nav-active" : "nav nav-hidden"}>
@@ -25,7 +26,7 @@ const NavList = ({
             spy={true} 
             smooth={true} 
             onClick={() => handleLinkClick("Home")}>
-            <span className="link">Home</span>
+            <span className={position === 'Home' ? "active link" : "link"}>Home</span>
           </Link>
         </li>
 
@@ -35,7 +36,7 @@ const NavList = ({
               spy={true} 
               smooth={true} 
               onClick={() => handleLinkClick("Home")}>
-              <span className="link">Me</span>
+              <span className={position === 'Bio' ? "active link" : "link"}>Me</span>
             </Link>
           </li>
 
@@ -45,7 +46,7 @@ const NavList = ({
             spy={true} 
             smooth={true} 
             onClick={() => handleLinkClick("Projects")}>
-            <span className="link">Projects</span>
+            <span className={position === 'Projects' ? "active link" : "link"}>Projects</span>
           </Link>
         </li>
 
@@ -55,7 +56,7 @@ const NavList = ({
             spy={true} 
             smooth={true} 
             onClick={() => handleLinkClick("Technologies")}>
-            <span className="link">Technologies</span>
+            <span className={position === 'Tech' ? "active link" : "link"}>Technologies</span>
           </Link>
         </li>
         
@@ -65,7 +66,7 @@ const NavList = ({
             spy={true} 
             smooth={true} 
             onClick={() => handleLinkClick("Contact")}>
-            <span className="link">Contact</span>
+            <span className={position === 'Contact' ? "active link" : "link"}>Contact</span>
           </Link>
         </li>
 
@@ -149,6 +150,10 @@ const NavList = ({
             font-size: 1.4rem;
             margin-left: 30px;
             cursor: pointer;
+          }
+
+          .link.active {
+            color: yellow;
           }
 
           .link:hover {

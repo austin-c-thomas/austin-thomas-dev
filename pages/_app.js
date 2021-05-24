@@ -5,8 +5,6 @@ import Layout from '../components/app/Layout';
 import '../styles/globals.css';
 
 const MyApp = ({ Component, pageProps }) => {
-  const [ activeLinkIs, setActiveLinkIs ] = useState('Home');
-
   useEffect(() => {
     // Remove the server-side injected CSS to support MUI.
     const jssStyles = document.querySelector('#jss-server-side');
@@ -16,7 +14,7 @@ const MyApp = ({ Component, pageProps }) => {
   }, []);
 
   return (
-    <Layout activeLinkIs = {activeLinkIs} setActiveLinkIs = {setActiveLinkIs}>
+    <Layout>
       <Component { ...pageProps } />
     </Layout>
   );
