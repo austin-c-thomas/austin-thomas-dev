@@ -2,17 +2,10 @@ import { useState } from "react";
 import { Link } from "react-scroll";
 import Carrot from "./Carrot";
 
-const BioBlock = () => {
-  const [ hovered, setHovered ] = useState(false);
+const BioBlock = ({ position }) => {
   return (
     <>
-      <section id="bio-block"
-      onMouseEnter={() => setHovered(true)}
-      onMouseLeave={() => setHovered(false)}
-      onClick={() => setHovered(true)}>
-
-
-
+      <section id="bio-block">
         <div className="bio-body-container">
 
           <div className="block-header">
@@ -20,10 +13,10 @@ const BioBlock = () => {
           </div>
 
           <div className="bio">
-            <div className="dynamic-text">I'm Austin, a full stack web developer located in Carlsbad, CA, and my talent is <div className={hovered ? "underlined active" : "underlined"}>building things.</div></div>
+            <div className="dynamic-text">I'm Austin, a full stack web developer located in Carlsbad, CA, and my talent is <div className={position === 'Bio' ? "underlined active" : "underlined"}>building things.</div></div>
             <div className="dynamic-text">Throughout my professional life I've built relationships with clients, business plans, marketing campaigns,
-            and online presences. Nowadays, I prefer to spend my time building <div className={hovered ? "underlined active" : "underlined"}>functional</div>, <div className={hovered ? "underlined active" : "underlined"}>aesthetic websites</div> and <div className={hovered ? "underlined active" : "underlined"}>applications</div> with code.</div>
-            <div className="dynamic-text">I specialize in developing full stack JavaScript applications with <div className={hovered ? "underlined active" : "underlined"}>React/NextJS</div>, <div className={hovered ? "underlined active" : "underlined"}>ExpressJS</div>, and <div className={hovered ? "underlined active" : "underlined"}>PostgreSQL</div>, and I have a strange but real obsession with writing <div className={hovered ? "underlined active" : "underlined"}>clean CSS</div> focused on full-responsiveness. Outside of the editor, I'm a goal-oriented team player
+            and online presences. Nowadays, I prefer to spend my time building <div className={position === 'Bio' ? "underlined active" : "underlined"}>functional</div>, <div className={position === 'Bio' ? "underlined active" : "underlined"}>aesthetic websites</div> and <div className={position === 'Bio' ? "underlined active" : "underlined"}>applications</div> with code.</div>
+            <div className="dynamic-text">I specialize in developing full stack JavaScript applications with <div className={position === 'Bio' ? "underlined active" : "underlined"}>React/NextJS</div>, <div className={position === 'Bio' ? "underlined active" : "underlined"}>ExpressJS</div>, and <div className={position === 'Bio' ? "underlined active" : "underlined"}>PostgreSQL</div>, and I have a strange but real obsession with writing <div className={position === 'Bio' ? "underlined active" : "underlined"}>clean CSS</div> focused on full-responsiveness. Outside of the editor, I'm a goal-oriented team player
             with an unquenchable thirst for self-improvement who genuinely enjoys going above and beyond.</div>
           </div>
 

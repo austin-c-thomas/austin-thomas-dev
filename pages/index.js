@@ -8,6 +8,8 @@ import {
 } from '../components';
 
 const Home = ({position, setPosition}) => {
+
+  // Keeps track of what section is being displayed in the browser.
   const isBrowser = typeof window !== 'undefined';
   if (isBrowser) {    
     const bio = document.querySelector('#bio-block');
@@ -42,7 +44,7 @@ const Home = ({position, setPosition}) => {
   return (
     <main id="home">
       <IntroBlock />
-      <BioBlock />
+      <BioBlock position = {position} />
       <ProjectsBlock />
       <TechBlock />
       <ContactBlock />
