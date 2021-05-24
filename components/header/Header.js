@@ -5,14 +5,9 @@ import LogoButton from './LogoButton';
 import MenuButton from './MenuButton';
 import NavList from './NavList';
 
-const Header = ({ activeLinkIs, setActiveLinkIs }) => {
+const Header = ({ position, setPosition }) => {
 
   const [ isMenuOpen, setIsMenuOpen ] = useState(false);
-
-  useEffect(() => {
-    // Update the current active Link by reading it from the URL
-    changeActiveLink(window.location.href, setActiveLinkIs);
-  });
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -28,12 +23,13 @@ const Header = ({ activeLinkIs, setActiveLinkIs }) => {
     <header id="header" 
     className="scrolled">
       <LogoButton 
-        setActiveLinkIs = {setActiveLinkIs}/>
+        setPosition = {setPosition}/>
 
       <NavList
         setIsMenuOpen = {setIsMenuOpen}
         isMenuOpen = {isMenuOpen}
-        handleLinkClick = {handleLinkClick}/>
+        handleLinkClick = {handleLinkClick}
+        position = {position}/>
 
       <MenuButton
         toggleMenu = {toggleMenu}
