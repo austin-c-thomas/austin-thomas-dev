@@ -19,7 +19,7 @@ const IntroBlock = () => {
 
         <div className="intro-content">
           <h1>AUSTIN THOMAS</h1>
-          <h2>FULL STACK WEB DEVELOPER FOR HIRE</h2>
+          <h2>FULL STACK WEB DEVELOPER</h2>
         </div>
 
         <div className="carrot-wrapper">
@@ -96,7 +96,9 @@ const IntroBlock = () => {
           }
 
           h2 {
+            font-size: 1.8rem;
             font-weight: 200;
+            color: rgb(180, 180, 180);
           }
 
           @keyframes fadeIn {
