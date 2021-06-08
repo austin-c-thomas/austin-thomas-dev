@@ -168,16 +168,24 @@ const BioBlock = ({ position }) => {
             #tech-block {
               padding: 80px 10vw 5vw 10vw;
             }  
+          }
 
+          @media screen and (max-width: 500px) {
             .dynamic-text.large {
               font-size: 2.4rem;
               margin-bottom: 30px;
             }
             
-            .underlined, .underlined.active {
+            .underlined, 
+            .underlined.active, 
+            .underlined.medium, 
+            .underlined.active.medium, 
+            .underlined.large, 
+            .underlined.active.large {
               top: 0;
             }
           }
+          
         `}
       </style>
     </>
