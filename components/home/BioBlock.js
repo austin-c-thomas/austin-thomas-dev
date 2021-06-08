@@ -1,4 +1,4 @@
-import { Link } from "react-scroll";
+import { Link as ScrollLink } from "react-scroll";
 import Carrot from "./Carrot";
 
 const BioBlock = ({ position }) => {
@@ -31,9 +31,9 @@ const BioBlock = ({ position }) => {
         </div>
 
         <div className="carrot-wrapper">
-          <Link className="carrot-link" to="projects" spy={true} smooth={true}>
+          <ScrollLink className="carrot-link" to="projects" spy={true} smooth={true}>
             <Carrot color = "rgb(160, 160, 160)" />
-          </Link>
+          </ScrollLink>
         </div>
       </section>
 

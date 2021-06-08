@@ -1,10 +1,10 @@
-import { Link } from 'react-scroll';
+import { Link as ScrollLink } from 'react-scroll';
 
 const LogoButton = () => {
   return (
     <div className='logo-button'>
 
-        <Link 
+        <ScrollLink 
             to="intro-block" 
             spy={true} 
             smooth={true} 
@@ -30,12 +30,13 @@ const LogoButton = () => {
             <span>T</span>
           </div>
         </>
-      </Link>
+      </ScrollLink>
 
       <style jsx>
         {`
           .logo-button {
             color: white;
+            cursor: pointer;
           }
 
           h1 {
