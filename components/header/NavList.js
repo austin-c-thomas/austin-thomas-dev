@@ -1,4 +1,4 @@
-import { Link } from 'react-scroll';
+import { Link as ScrollLink } from 'react-scroll';
 import { Button } from '@material-ui/core'
 import { KeyboardArrowLeft } from '@material-ui/icons';
 
@@ -21,53 +21,53 @@ const NavList = ({
       <ul className={isMenuOpen ? "nav-list-active" : "nav-list-hidden"}>
 
         <li className={isMenuOpen ? "nav-link" : "hidden"}>
-          <Link 
+          <ScrollLink 
             to="intro-block" 
             spy={true} 
             smooth={true} 
             onClick={() => handleLinkClick("Home")}>
             <span className={position === 'Home' ? "active link" : "link"}>Home</span>
-          </Link>
+          </ScrollLink>
         </li>
 
         <li className={isMenuOpen ? "nav-link" : "hidden"}>
-          <Link 
+          <ScrollLink 
               to="bio-block" 
               spy={true} 
               smooth={true} 
               onClick={() => handleLinkClick("Home")}>
               <span className={position === 'Bio' ? "active link" : "link"}>Me</span>
-            </Link>
+            </ScrollLink>
           </li>
 
         <li className={isMenuOpen ? "nav-link" : "hidden"}>
-          <Link 
+          <ScrollLink 
             to="projects" 
             spy={true} 
             smooth={true} 
             onClick={() => handleLinkClick("Projects")}>
             <span className={position === 'Projects' ? "active link" : "link"}>Projects</span>
-          </Link>
+          </ScrollLink>
         </li>
 
         <li className={isMenuOpen ? "nav-link" : "hidden"}>
-          <Link 
+          <ScrollLink 
             to="tech-block" 
             spy={true} 
             smooth={true} 
             onClick={() => handleLinkClick("Technologies")}>
             <span className={position === 'Tech' ? "active link" : "link"}>Technologies</span>
-          </Link>
+          </ScrollLink>
         </li>
         
         <li className={isMenuOpen ? "nav-link" : "hidden"}>
-          <Link 
+          <ScrollLink 
             to="contact-block" 
             spy={true} 
             smooth={true} 
             onClick={() => handleLinkClick("Contact")}>
             <span className={position === 'Contact' ? "active link" : "link"}>Contact</span>
-          </Link>
+          </ScrollLink>
         </li>
 
       </ul>
