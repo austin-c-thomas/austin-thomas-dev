@@ -12,16 +12,15 @@ const BioBlock = ({ position }) => {
           </div>
 
           <div className="bio">
-            {/* <div className="dynamic-text">I'm Austin, a full stack web developer located in Carlsbad, CA, and my talent is <div className={position === 'Bio' ? "underlined active" : "underlined"}>building things.</div></div>
+            <div className="dynamic-text">I'm Austin, a full stack web developer located in Carlsbad, CA, and my talent is <div className={position === 'Bio' ? "underlined active" : "underlined"}>building things.</div></div>
             <div className="dynamic-text">Throughout my professional life I've built relationships with clients, business plans, marketing campaigns,
             and online presences. Nowadays, I prefer to spend my time building <div className={position === 'Bio' ? "underlined active" : "underlined"}>functional</div>, <div className={position === 'Bio' ? "underlined active" : "underlined"}>aesthetic websites</div> and <div className={position === 'Bio' ? "underlined active" : "underlined"}>applications</div> with code.</div>
             <div className="dynamic-text">I specialize in developing full stack JavaScript applications with <div className={position === 'Bio' ? "underlined active" : "underlined"}>React/NextJS</div>, <div className={position === 'Bio' ? "underlined active" : "underlined"}>ExpressJS</div>, and <div className={position === 'Bio' ? "underlined active" : "underlined"}>PostgreSQL</div>, and I have a strange but real obsession with writing <div className={position === 'Bio' ? "underlined active" : "underlined"}>clean CSS</div> focused on full-responsiveness. Outside of the editor, I'm a goal-oriented team player
-            with an unquenchable thirst for self-improvement who genuinely enjoys going above and beyond.</div> */}
+            with an unquenchable thirst for self-improvement who genuinely enjoys going above and beyond.</div>
 
-            <div className="dynamic-text medium">Hi, I'm <div className={position === 'Bio' ? "underlined active medium" : "underlined medium"}>Austin</div>.</div>
+            {/* <div className="dynamic-text medium">Hi, I'm <div className={position === 'Bio' ? "underlined active medium" : "underlined medium"}>Austin</div>.</div>
             <div className="dynamic-text large">I help small businesses establish a presence online by building <div className={position === 'Bio' ? "underlined active large" : "underlined large"}>functional</div>, <div className={position === 'Bio' ? "underlined active large" : "underlined large"}>aesthetic</div> <div className={position === 'Bio' ? "underlined active large" : "underlined large"}>websites</div> with code.</div>
-            <div className="dynamic-text medium">My specialties include fully responsive custom design using <div className={position === 'Bio' ? "underlined active medium" : "underlined medium"}>React/NextJS</div>, writing servers and APIs with <div className={position === 'Bio' ? "underlined active medium" : "underlined medium"}>Express</div> and building databases with <div className={position === 'Bio' ? "underlined active medium" : "underlined medium"}>PostgreSQL</div>.</div>
-            {/* <div className="dynamic-text medium"><div className={position === 'Bio' ? "underlined active" : "underlined"}>React/NextJS</div>, <div className={position === 'Bio' ? "underlined active" : "underlined"}>ExpressJS</div> and <div className={position === 'Bio' ? "underlined active" : "underlined"}>PostgreSQL</div>.</div> */}
+            <div className="dynamic-text medium">My specialties include fully responsive custom design using <div className={position === 'Bio' ? "underlined active medium" : "underlined medium"}>React/NextJS</div>, writing servers and APIs with <div className={position === 'Bio' ? "underlined active medium" : "underlined medium"}>Express</div> and building databases with <div className={position === 'Bio' ? "underlined active medium" : "underlined medium"}>PostgreSQL</div>.</div> */}
 
           </div>
 
