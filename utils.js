@@ -1,11 +1,11 @@
 // Tech stack lists
 export const generateStackList = (label) => {
   if (label === "Languages") {
-    return ['JavaScript', 'CSS3', 'HTML5', 'SQL', 'Git']
+    return ['JavaScript', 'CSS3', 'HTML5', 'SQL'] //TypeScript
   }; 
   
   if (label === "Libraries/Frameworks") {
-      return ['ReactJS/NextJS', 'Material UI', 'JQuery', 'Node/ExpressJS', 'PostgreSQL']
+      return ['ReactJS/NextJS', 'Node/ExpressJS', 'PostgreSQL'] //React Native
   }; 
 
   if (label === "Build/Test Tools") {
