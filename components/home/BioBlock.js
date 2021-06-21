@@ -174,15 +174,6 @@ const BioBlock = ({ position }) => {
               font-size: 2.4rem;
               margin-bottom: 30px;
             }
-            
-            .underlined, 
-            .underlined.active, 
-            .underlined.medium, 
-            .underlined.active.medium, 
-            .underlined.large, 
-            .underlined.active.large {
-              top: 0;
-            }
           }
           
         `}
