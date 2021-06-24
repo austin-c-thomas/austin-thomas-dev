@@ -53,7 +53,6 @@ const ContactForm = () => {
     <>
       <div className="form-wrapper">
         <h1>Send me a message</h1>
-
         {sent ?
         <MsgSuccess />
         : <form 
@@ -87,52 +86,12 @@ const ContactForm = () => {
           value={values.message}
           onChange={handleInputChange}/>
 
-      <Button
-        variant="outlined"
-        color="primary"
-        type="submit"
-        disabled={sent ? true : false}>Send</Button>
-
-      </form>
-      }
-        {/* <form 
-          id="contact-form"
-          onSubmit={handleSubmit}>
-
-          <TextField 
-            variant="outlined"
-            id="name"
-            label="Name"
-            required={true}
-            value={values.name}
-            onChange={handleInputChange}/>
-
-          <TextField 
-            variant="outlined"
-            id="email"
-            label="Email"
-            type="email"
-            required={true}
-            value={values.email}
-            onChange={handleInputChange}/>  
-
-          <TextField 
-            variant="outlined"
-            id="message"
-            label="Message"
-            multiline
-            rows={6}
-            required={true}
-            value={values.message}
-            onChange={handleInputChange}/>
-
         <Button
           variant="outlined"
           color="primary"
           type="submit"
           disabled={sent ? true : false}>Send</Button>
-
-        </form> */}
+        </form>}
       </div>
 
       <style jsx>

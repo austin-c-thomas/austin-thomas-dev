@@ -9,7 +9,7 @@ export const generateStackList = (label) => {
   }; 
 
   if (label === "Build/Test Tools") {
-    return ['Github', 'Vercel', 'Netlify', 'Heroku', 'Jest']
+    return ['Git/Github', 'Vercel', 'Netlify', 'Heroku', 'Jest']
   };
   
   if (label === "Design Tools") {

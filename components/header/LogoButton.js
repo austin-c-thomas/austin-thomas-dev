@@ -36,6 +36,7 @@ const LogoButton = () => {
         {`
           .logo-button {
             color: white;
+            cursor: pointer;
           }
 
           h1 {

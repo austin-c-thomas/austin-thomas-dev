@@ -1,5 +1,3 @@
-import { Button } from "@material-ui/core"
-import { KeyboardArrowDown } from "@material-ui/icons"
 import IntroGraphic from "./IntroGraphic"
 import { Link } from 'react-scroll';
 import Carrot from "./Carrot";
